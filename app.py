@@ -229,8 +229,7 @@ st.dataframe(filtered_df, use_container_width=True, height=600)
 ############################################################################################################################
 
 # Grouper selon la marque et faire la moyenne du prix de vente
-nouv = df.groupby('make').agg(prix_moyen = ('sellingprice', 'mean'))
-st.sidebar.selectbox('Select box test: ', values = [nouv])
+
 # Grouper selon la marque, le modèle, trim et body  et faire la moyenne des km, du prix de vente et de l'état
 #df.groupby(['make', 'model', 'trim', 'body'], as_index = False).agg( 
   #  prix_moyen = ('sellingprice', 'mean'),
