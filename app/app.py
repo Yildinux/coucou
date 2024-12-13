@@ -6,7 +6,7 @@ from datetime import datetime
 st.title("Ventes de voiture aux Etats-Unis")
 
 # Récupération des données depuis un fichier csv
-df = pd.read_csv("./car_prices_clean.csv", delimiter = ',', encoding='utf-8')
+df = pd.read_csv("car_prices_clean.csv", delimiter = ',', encoding='utf-8')
 
 ##########################################################################################################################
 # Implémenter la fonctionnalité de tri du jeu de données
